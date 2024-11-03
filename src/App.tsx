@@ -1,15 +1,29 @@
 
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
-import { LoginPage } from './components/LoginPage';
+import { BrowserRouter} from 'react-router-dom';
+import { NavBar } from './components/NavBar';
+import { AppContextProvider } from './context/AppContext';
+import Router from './Router';
+import { createLocalStorage, getAllLocalStorage } from './services/Storage';
 
 function App() {
+
+  if(!getAllLocalStorage()){
+    createLocalStorage();
+  }
+  
+  
   return (
     <>
-      <ChakraProvider>
-        <LoginPage/>
-
-      </ChakraProvider>
+      <BrowserRouter>
+        <AppContextProvider>
+          <ChakraProvider>
+            <NavBar />
+              <Router />
+          </ChakraProvider>
+        </AppContextProvider>
+      </BrowserRouter>
     </>
   );
 }
