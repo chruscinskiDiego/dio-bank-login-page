@@ -1,30 +1,30 @@
-# DIO Bank — interface de login
+# DIO Bank — login interface
 
-Projeto de estudo da formação Fullstack TypeScript Developer da DIO, com fluxo de login e visualização de conta em React.
+Study project from DIO's Fullstack TypeScript Developer course, with a React login flow and account view.
 
-## Recursos
+## Features
 
-- Componentes de login, navegação e informações da conta.
-- Estado compartilhado por Context.
-- Serviços locais de login e armazenamento.
-- Teste de componente para o botão de login.
+- Login, navigation and account information components.
+- Shared state through Context.
+- Local login and storage services.
+- A login button component test.
 
-## Tecnologias
+## Technologies
 
-React, TypeScript, Chakra UI, React Router e React Testing Library. O projeto utiliza Create React App.
+React, TypeScript, Chakra UI, React Router and React Testing Library. The project uses Create React App.
 
-## Executar
+## Run locally
 
 ```bash
 npm ci
 npm start
 ```
 
-## Comandos
+## Commands
 
-- `npm run build`: build da interface.
-- `npm test`: inicia os testes configurados no projeto.
+- `npm run build`: builds the interface.
+- `npm test`: starts the project's test runner.
 
-## Escopo
+## Scope
 
-Demonstração didática de interface e fluxo de autenticação simulado. Não é um banco real e não deve receber dados bancários ou credenciais reais.
+A teaching demonstration of UI and simulated authentication. It is not a real bank and should not receive real banking information or credentials.
